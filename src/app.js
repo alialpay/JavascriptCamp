@@ -1,3 +1,16 @@
+var sayi1 = 10
+sayi1 = "Ali"
+let student = {id:1, name:"Ali"}
+//console.log(student)
+
+function save(puan=10, ogrenci) {
+    console.log(ogrenci.name + " : " + puan)
+}
+save(undefined, student);
+
+
+
+/*
 console.log("Merhaba kodlama.io")
 
 let dolarBugun = 9.30
@@ -25,3 +38,4 @@ for (let i= 0; i < konutKredileri.length; i++) {
     
 }
 console.log("</ul")
+*/
