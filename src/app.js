@@ -6,7 +6,26 @@ let student = {id:1, name:"Ali"}
 function save(puan=10, ogrenci) {
     console.log(ogrenci.name + " : " + puan)
 }
-save(undefined, student);
+//save(undefined, student);
+
+let students = ["Ali Alpay", "Engin Demiroğ", "Büşra"]
+
+//console.log(students)
+
+let students2= [student,{id:2, name:"Merve"}, "Ankara",{city:"İstanbul"}]
+
+//console.log(students2)
+
+//rest
+//params... c#
+//varArgs... java
+let showProducts = function (id,...products) {
+    console.log(id)
+    console.log(products)
+}
+
+//console.log(typeof showProducts)
+showProducts()
 
 
 
