@@ -65,3 +65,49 @@ let products = [
 ]
 
 addToCart4(products)
+
+function add(bisey,...numbers) { // rest operatörü: "..."
+    let total = 0
+    for (let i = 0; i < numbers.length; i++) {
+        total = total + numbers[i]
+    }
+    console.log(total)
+    console.log(bisey)
+}
+
+
+add(20,30)
+// add(20,30,40)
+// add(20,30,40,50)
+
+
+// spread
+
+let numbers = [20,10,500,600,120]
+//console.log(...numbers)
+console.log(Math.max(...numbers))
+
+// spread ayrıştırır, rest toparlar
+
+let [icAnadolu,marmara,karadeniz,[icAnadoluSehirleri]]=[
+    {name:"İç Anadolu", pop:"20M"},
+    {name:"Marmara", pop:"300M"},
+    {name:"Karadeniz", pop:"10M"},
+    [
+        ["Ankara","Konya"],
+        ["İstanbul","Bursa"],
+        ["Rize","Ordu"]
+    ]
+]
+
+// console.log(icAnadolu.name)
+// console.log(icAnadolu.pop)
+console.log(icAnadoluSehirleri)
+
+let newProductName, newUnitPrice, newQuantity
+( {productName:newProductName, unitPrice:newUnitPrice, quantity:newQuantity} 
+ = {productName: "Ayva",unitPrice:10, quantity:5})
+
+console.log(newProductName)
+console.log(newUnitPrice)
+console.log(newQuantity)
