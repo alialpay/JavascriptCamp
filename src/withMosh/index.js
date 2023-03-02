@@ -1,3 +1,7 @@
+// yaptıklarını tarayıcıda görmek için html üzerinde sağ tıkla
+// open with Live Server 
+
+
 console.log('hello world');
 //
 let faiz = 0.3;
@@ -53,3 +57,5 @@ function square(number) {
     return number*number;
 }
 console.log(square(5))      //25
+
+
