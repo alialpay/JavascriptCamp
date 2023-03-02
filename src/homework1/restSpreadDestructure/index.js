@@ -1,3 +1,5 @@
+// comment için ctrl+k ctrl+x
+// uncomment için ctrl+k ctrl+u
 var sayi1 = 10
 sayi1 = "Ali"
 let student = {id:1, name:"Ali"}
@@ -6,7 +8,7 @@ console.log(student)
 function save(puan=10, ogrenci) {
     console.log(ogrenci.name + " : " + puan)
 }
-save(undefined, student);
+save(undefined, student); //student nesnesi ogrenciye karşılık gelsin ve puan değeri default değeri alsın istedik
 save(8,student)
 
 let students = ["Ali Alpay", "Engin Demiroğ", "Büşra"]
@@ -18,18 +20,21 @@ let students2= [student,{id:2, name:"Merve"}, "Ankara",{city:"İstanbul"}]
 console.log(students2)
 
 //rest (dinamik) parametre
-//params... c#
-//varArgs... java
-let showProducts = function (id,...products) {
+console.log('rest')
+
+    //params... c#
+    //varArgs... java
+let showProducts = function (id,...products) { // üç nokta aslında bir array niteler
     console.log(id)
     console.log(products)
 }
 
-
+showProducts()
 //console.log(typeof showProducts)
  showProducts(10, "elma","armut","karpuz")
 
 //spread
+console.log('spread')
 
 let points = [1,2,3,4,50,4,60,54]
 

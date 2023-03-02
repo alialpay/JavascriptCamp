@@ -19,13 +19,13 @@ console.log(customer.customerNumber)
 
 
 class IndividualCustomer extends Customer{
-    customer(firstName,id,customerNumber){
+    constructor(firstName,id,customerNumber){
         super(id,customerNumber)
         this.firstName=firstName
     }
 }
 class CorporateCustomer extends Customer{
-    customer(companyName,id,customerNumber){
+    constructor(companyName,id,customerNumber){
         super(id,customerNumber)
         this.companyName=companyName
     }
