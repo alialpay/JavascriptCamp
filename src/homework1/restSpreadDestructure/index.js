@@ -1,22 +1,23 @@
 var sayi1 = 10
 sayi1 = "Ali"
 let student = {id:1, name:"Ali"}
-//console.log(student)
+console.log(student)
 
 function save(puan=10, ogrenci) {
     console.log(ogrenci.name + " : " + puan)
 }
-//save(undefined, student);
+save(undefined, student);
+save(8,student)
 
 let students = ["Ali Alpay", "Engin Demiroğ", "Büşra"]
 
-//console.log(students)
+console.log(students)
 
 let students2= [student,{id:2, name:"Merve"}, "Ankara",{city:"İstanbul"}]
 
-//console.log(students2)
+console.log(students2)
 
-//rest
+//rest (dinamik) parametre
 //params... c#
 //varArgs... java
 let showProducts = function (id,...products) {
@@ -24,8 +25,9 @@ let showProducts = function (id,...products) {
     console.log(products)
 }
 
+
 //console.log(typeof showProducts)
-// showProducts(10, "elma","armut","karpuz")
+ showProducts(10, "elma","armut","karpuz")
 
 //spread
 
@@ -40,6 +42,7 @@ console.log(..."abc","d",..."efg","h")
 
 
 //destructuring
+console.log('destructuring')
 
 let populations = [10000,20000,30000,[40000,100000]]
 let [small, medium, high,[veryHigh,maximum]] = populations
@@ -51,7 +54,7 @@ console.log(veryHigh)
 console.log(maximum)
 
 function someFunction([small1],number) {
-    console.log(small1)
+    console.log('small:' + small1)
 }
 
 someFunction(populations)

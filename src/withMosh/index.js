@@ -1,5 +1,6 @@
 // yaptıklarını tarayıcıda görmek için html üzerinde sağ tıkla
 // open with Live Server 
+// açılan pencerede inspect aç ve console'a geç
 
 
 console.log('hello world');
