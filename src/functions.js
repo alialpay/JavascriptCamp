@@ -66,7 +66,7 @@ let products = [
 
 addToCart4(products)
 
-function add(bisey,...numbers) { // rest operatörü: "..."
+function add(bisey,...numbers) { // rest operatörü: "..." gönderinlen değerleri array içine alır
     let total = 0
     for (let i = 0; i < numbers.length; i++) {
         total = total + numbers[i]
@@ -83,6 +83,8 @@ add(20,30)
 
 // spread
 
+// veriler backendden array halinden gelecek:
+// ... üç nokta ile veriyi ayırırız
 let numbers = [20,10,500,600,120]
 //console.log(...numbers)
 console.log(Math.max(...numbers))

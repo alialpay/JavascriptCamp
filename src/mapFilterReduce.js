@@ -14,7 +14,7 @@ cart.map(product=>{
 })
 console.log("</ul>")
 
-
+// reduce: sepet değerini toplar
 let total = cart.reduce((acc,product)=>acc + product.unitPrice * product.quantity,0)
 
 console.log(total)
