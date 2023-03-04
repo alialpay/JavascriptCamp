@@ -26,3 +26,7 @@ for (let i= 0; i < konutKredileri.length; i++) {
     
 }
 console.log("</ul")
+
+for(let i = 0; i < 3; i++){
+    console.log("<li>" + i + "</li>")
+}
