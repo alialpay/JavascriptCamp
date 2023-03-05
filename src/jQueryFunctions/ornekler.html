@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Örnekleri</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#goster").click(function(){
+				$("#ornek1").show();
+			});
+
+			$("#gizle").click(function(){
+				$("#ornek1").hide();
+			});
+
+			$("#toggle").click(function(){
+				$("#ornek2").toggle();
+			});
+
+			$("#ekle").click(function(){
+				$("#ornek3").append("<li>yeni öğe</li>");
+			});
+
+			$("#ekleBas").click(function(){
+				$("#ornek3").prepend("<li>yeni öğe baş</li>");
+			});
+
+			$("#degistir").click(function(){
+				$("#ornek4").html("<strong>yenisi</strong>");
+			});
+
+			$("#degistirCss").click(function(){
+				$("#ornek4").css("color", "red");
+			});
+
+			$("#ekleClass").click(function(){
+				$("#ornek5").addClass("kirmizi");
+			});
+
+			$("#kaldirClass").click(function(){
+				$("#ornek5").removeClass("kirmizi");
+			});
+		});
+	</script>
+	<style>
+		.kirmizi {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<h1>jQuery Örnekleri</h1>
+
+	<h2>Örnek 1</h2>
+	<button id="goster">Göster</button>
+	<button id="gizle">Gizle</button>
+	<div id="ornek1">Örnek 1</div>
+
+	<h2>Örnek 2</h2>
+	<button id="toggle">Göster/Gizle</button>
+	<div id="ornek2">Örnek 2</div>
+
+	<h2>Örnek 3</h2>
+	<button id="ekle">Ekle</button>
+	<button id="ekleBas">Başa Ekle</button>
+	<ul id="ornek3">
+		<li>Örnek 3-1</li>
+		<li>Örnek 3-2</li>
+	</ul>
+
+	<h2>Örnek 4</h2>
+	<button id="degistir">Değiştir</button>
+	<button id="degistirCss">CSS Değiştir</button>
+	<div id="ornek4">Örnek 4</div>
+
+	<h2>Örnek 5</h2>
+	<button id="ekleClass">Class Ekle</button>
+	<button id="kaldirClass">Class Kaldır</button>
+	<div id="ornek5">Örnek 5</div>
+</body>
+</html>

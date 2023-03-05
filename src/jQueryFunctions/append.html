@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div id="myDiv">
+  Bu div elemanı şu anda görünür.
+</div>
+
+<button onclick="addParagraph()">Yeni Paragraf Ekle</button>
+
+<script>
+function addParagraph() {
+  $("#myDiv").append("<p>Bu bir yeni paragraf.</p>");
+}
+</script>
+
+</body>
+</html>

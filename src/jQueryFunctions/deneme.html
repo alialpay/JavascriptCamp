@@ -1,0 +1,94 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Örnekleri</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// kodlar buraya gelecek
+		});
+	</script>
+</head>
+<body>
+	<h1 id="baslik">Merhaba Dünya</h1>
+	<button id="gizleGoster">Gizle/Göster</button>
+	<p id="icerik">Bu bir örnek paragraf.</p>
+	<button id="ekle">Ekle</button>
+	<ul id="liste">
+		<li>Öğe 1</li>
+		<li>Öğe 2</li>
+		<li>Öğe 3</li>
+	</ul>
+	<button id="sinifEkle">Sınıf Ekle</button>
+</body>
+</html>
+<script>
+$(document).ready(function(){
+	$("#gizleGoster").click(function(){
+		$("#icerik").toggle();
+	});
+});
+$(document).ready(function(){
+	$("#ekle").click(function(){
+		$("#liste").append("<li>Yeni Öğe</li>");
+	});
+});
+
+</script>
+<script>
+    $(document).ready(function(){
+	$("#sinifEkle").click(function(){
+		$("#baslik").addClass("beyazYazi");
+	});
+	$("#sinifKaldir").click(function(){
+		$("#baslik").removeClass("beyazYazi");
+	});
+});
+</script>
+ -->
+
+
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Örnekleri</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#gizleGoster").click(function(){
+				$("#icerik").toggle();
+			});
+			
+			$("#ekle").click(function(){
+				$("#liste").append("<li>Yeni Öğe</li>");
+			});
+			
+			$("#sinifEkle").click(function(){
+				$("#baslik").addClass("kalinYazi");
+			});
+			
+			$("#sinifKaldir").click(function(){
+				$("#baslik").removeClass("kalinYazi");
+			});
+		});
+	</script>
+	<style>
+		.kalinYazi {
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="baslik">Merhaba Dünya</h1>
+	<button id="gizleGoster">Gizle/Göster</button>
+	<p id="icerik">Bu bir örnek paragraf.</p>
+	<button id="ekle">Ekle</button>
+	<ul id="liste">
+		<li>Öğe 1</li>
+		<li>Öğe 2</li>
+		<li>Öğe 3</li>
+	</ul>
+	<button id="sinifEkle">Sınıf Ekle</button>
+	<button id="sinifKaldir">Sınıf Kaldır</button>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>  <!--  Bu bir HTML5 belgesi olduğunu belirtir. -->
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+    <!--  jQuery kütüphanesini HTML belgesine ekler. Bu sayede jQuery fonksiyonlarını kullanabiliriz. -->
+<html>
+</head>
+<body>
+
+<div id="myDiv" style="display:none">   
+  <!--  Web sayfasında görüntülenecek olan gizli div elemanı tanımlanır. id niteliği, jQuery kodunda elemana erişmek için 
+    kullanılacaktır. style niteliği, bu div elemanının başlangıçta görünmez olacağını tanımlar. -->
+  Bu div elemanı şu anda görünmez.
+</div>
+
+<button onclick="showDiv()">Görünmez Div'i Göster</button>     
+ <!--  Buton elemanı oluşturulur ve onclick özelliği tanımlanır. Butona tıklandığında showDiv() fonksiyonu çalışacaktır. -->
+ 
+ <button onclick="hideDiv()">Div'i Gizle</button>
+ <!-- Butona tıklandığında hideDiv() fonsiyonunu çalıştırır -->
+ 
+ <button onclick="addParagraph()">Yeni Paragraf Ekle</button>
+
+<script>
+function showDiv() {
+  $("#myDiv").show();
+}
+function hideDiv() {
+  $("#myDiv").hide();
+}
+function addParagraph() {
+  $("#myDiv").append("<p>Bu bir yeni paragraf.</p>");
+}
+</script>
+
+</body>
+</html>
+
