@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jQuery</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <h2>JQuery Lesson</h2>
+        </div>
+        
+        <p id="result"></p>
+        
+        <button>Click</button>
+        <script>
+            $(function(){
+            $("button").click(function(){
+                $("div").load("demo.txt");
+            });
+        });
+        </script>
+    </body>
+</html>

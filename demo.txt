@@ -1,0 +1,2 @@
+<h2>jQuery and Ajax</h2>
+<p id="p1">Sayfa guncellemeden veri çektik</p>
