@@ -1,0 +1,19 @@
+{
+  "name": "Ana Düğüm",
+  "children": [
+    {
+      "name": "Alt Düğüm 1",
+      "children": [
+        { "name": "Alt Alt Düğüm 1" },
+        { "name": "Alt Alt Düğüm 2" }
+      ]
+    },
+    {
+      "name": "Alt Düğüm 2",
+      "children": [
+        { "name": "Alt Alt Düğüm 3" },
+        { "name": "Alt Alt Düğüm 4" }
+      ]
+    }
+  ]
+}

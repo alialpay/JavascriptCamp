@@ -1,0 +1,33 @@
+{
+  "name": "Ankara",
+  "children": [
+    {
+      "name": "Mamak"
+    },
+    {
+      "name": "Çankaya",
+      "children": [
+        {
+          "name": "Beytepe",
+          "children": [
+            {
+              "name": "Kanuni Sultan Süleyman Bulvarı"
+            },
+            {
+              "name": "Yavuz Sultan Selim Bulvarı"
+            }
+          ]
+        },
+        {
+          "name": "Alacaatlı"
+        }
+      ]
+    },
+    {
+      "name": "Yenimahalle"
+    },
+    {
+      "name": "Gölbaşı"
+    }
+  ]
+}

@@ -1,7 +1,30 @@
-{
-    "firstName" : "Semanur",
-    "lastName"  : "Alpay",
-    "age"       : 19,
-    "retired"   : false
-    
-}
+[
+    {
+        "firstName" : "Semanur",
+        "lastName"  : "Alpay",
+        "age"       : 19,
+        "retired"   : false
+        
+    },
+    {
+        "firstName" : "Erşan",
+        "lastName"  : "Alpay",
+        "age"       : 19,
+        "retired"   : true
+        
+    },
+    {
+        "firstName" : "Havva",
+        "lastName"  : "Alpay",
+        "age"       : 19,
+        "retired"   : false
+        
+    },
+    {
+        "firstName" : "Barış",
+        "lastName"  : "Alpay",
+        "age"       : 19,
+        "retired"   : false
+        
+    }
+]

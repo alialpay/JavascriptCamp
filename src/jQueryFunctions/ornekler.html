@@ -40,10 +40,38 @@
 			$("#kaldirClass").click(function(){
 				$("#ornek5").removeClass("kirmizi");
 			});
+
+			$("#gizleFade").click(function(){
+				$("#ornek6").fadeOut();
+			});
+
+			$("#gosterFade").click(function(){
+				$("#ornek6").fadeIn();
+			});
+
+			$("#animasyon").click(function(){
+				$("#ornek7").animate({left: '250px'});
+			});
+
+			$("#stop").click(function(){
+				$("#ornek7").stop();
+			});
 		});
+		</script>
 	<style>
 		.kirmizi {
 			color: red;
+		}
+		#ornek6 {
+			width: 100px;
+			height: 100px;
+			background-color: yellow;
+		}
+		#ornek7 {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			background-color: green;
 		}
 	</style>
 </head>
@@ -76,5 +104,15 @@
 	<button id="ekleClass">Class Ekle</button>
 	<button id="kaldirClass">Class Kaldır</button>
 	<div id="ornek5">Örnek 5</div>
+
+	<h2>Örnek 6</h2>
+	<button id="gizleFade">Gizle</button>
+	<button id="gosterFade">Göster</button>
+	<div id="ornek6">Örnek 6</div>
+
+	<h2>Örnek 7</h2>
+	<button id="animasyon">animasyon</button>
+	<button id="stop">durdur</button>
+	<div id="ornek7">Örnek 7</div>
 </body>
 </html>
