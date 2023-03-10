@@ -1,0 +1,28 @@
+{
+  "Ankara": [
+    {
+      "name": "Mamak",
+      "districts": ["İsmetpaşa", "Güneşevler"]
+    },
+    {
+      "name": "Çankaya",
+      "districts": ["Ayrancı", "Bahçelievler"],
+      "neighborhoods": ["Kızılay", "Cebeci", "Dikmen"]
+    },
+    {
+      "name": "Gölbaşı",
+      "districts": ["GölbasiMerkez", "İncek"],
+      "neighborhoods": ["GölbaşıMahallesi", "Taşdelen", "İncek"]
+    }
+  ],
+  "İstanbul": [
+    {
+      "name": "Üsküdar",
+      "districts": ["Kandilli", "Çengelköy"]
+    },
+    {
+      "name": "Kadıköy",
+      "districts": ["Caddebostan", "Fenerbahçe"]
+    }
+  ]
+}

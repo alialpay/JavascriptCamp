@@ -1,0 +1,40 @@
+{
+    "name": "Ankara",
+    "children": [
+      {
+        "name": "Çankaya",
+        "children": [
+          { 
+            "name": "Beytepe",
+            "children": [
+              { 
+                "name": "KanuniSultanSüleymanBulvarı",
+                "children":[
+                  { "name": "5704sk",
+                    "children":[
+                      {"name": "No:1"}
+                    ]
+                  }
+                ]
+              },
+              { 
+                "name": "YavuzSultanSelimBulvarı",
+                "children": [
+                  {"name":"Bağlar Caddesi"},
+                  {"name":"Bağlar Caddesi"}
+                ]
+              }
+            ] 
+        },
+          { "name": "Kızılay" }
+        ]
+      },
+      {
+        "name": "Mamak",
+        "children": [
+          { "name": "Abidinpaşa" },
+          { "name": "Akdere" }
+        ]
+      }
+    ]
+  }

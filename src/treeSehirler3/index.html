@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // JSON dosyasını yükle
+            $.getJSON("cities.json", function(data) {
+                // Her il için bir buton oluştur
+                $.each(data, function(city, districts) {
+                    var button = $("<button>").text(city).appendTo("body");
+                    // Butona tıklandığında ilçeleri göster/gizle
+                    button.click(function() {
+                        $.each(districts, function(i, district) {
+                            // İlçe butonunu göster/gizle
+                            $("#" + district.name).toggle();
+                            // Mahalle butonlarını göster/gizle
+                            $.each(district.neighborhoods || [], function(j, neighborhood) {
+                                $("#" + neighborhood).toggle();
+                            });
+                        });
+                    });
+                    // Her ilçe için bir buton oluştur
+                    $.each(districts, function(i, district) {
+                        $("<button>").attr("id", district.name).text(district.name).appendTo("body").hide();
+                        // Her mahalle için bir buton oluştur
+                        $.each(district.neighborhoods || [], function(j, neighborhood) {
+                            $("<button>").attr("id", neighborhood).text(neighborhood).appendTo("body").hide();
+                        });
+                    });
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+</body>
+</html>

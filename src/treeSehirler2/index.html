@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		#mamak, #cankaya, #beytepe, #sogutozu, #kizilay, #golbasi {
+			display: none;
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$("#ankara").click(function() {
+                $("#mamak, #cankaya, #golbasi").toggle();
+                if ($("#mamak, #cankaya, #golbasi").is(":visible")) {
+                    $("#beytepe, #sogutozu, #kizilay").hide();
+                } else {
+                $("#beytepe, #sogutozu, #kizilay").hide();
+                }
+            });
+
+            $("#cankaya").click(function() {
+            $("#beytepe, #sogutozu, #kizilay").toggle();
+            });
+
+		});
+	</script>
+</head>
+<body>
+	<button id="ankara">Ankara</button>
+	<!-- <button id="mamak">Mamak</button> -->
+	<button id="cankaya">Çankaya</button>
+	<button id="beytepe">Beytepe</button>
+	<button id="sogutozu">Söğütözü</button>
+	<button id="kizilay">Kızılay</button>
+	<!-- <button id="golbasi">Gölbaşı</button> -->
+</body>
+</html>

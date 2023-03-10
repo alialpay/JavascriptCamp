@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<style>
+		#mamak, #cankaya, #beytepe, #sogutozu, #kizilay, #golbasi, #kssBulvari {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- <button id="ankara">Ankara</button> -->
+    <div id="ankaraContainer"></div>
+
+	<button id="cankaya">Çankaya</button>
+	<button id="beytepe">Beytepe</button>
+	<button id="sogutozu">Söğütözü</button>
+	<button id="kizilay">Kızılay</button>
+	<button id="golbasi">Gölbaşı</button>
+    <button id="kssBulvari">KSSBULV</button>
+
+
+	<script>
+		$(document).ready(function(){
+  $.getJSON("index.json", function(data) {
+    var $ankara = $("<button>", { id: "ankara", text: "Ankara" });
+    var $cankaya = $("<button>", { id: "cankaya", text: "Çankaya" });
+    var $mamak = $("<button>", { id: "mamak", text: "Mamak" });
+    var $golbasi = $("<button>", { id: "golbasi", text: "Gölbaşı" });
+    var $beytepe = $("<button>", { id: "beytepe", text: "Beytepe" });
+    var $sogutozu = $("<button>", { id: "sogutozu", text: "Söğütözü" });
+    var $kizilay = $("<button>", { id: "kizilay", text: "Kızılay" });
+    var $kssBulvari = $("<button>", { id: "kssBulvari", text: "KanuniSultanSüleymanBulvarı" });
+
+    $ankara.appendTo("#ankaraContainer");
+    $mamak.appendTo("body");
+    $golbasi.appendTo("body");
+    $cankaya.appendTo("body");
+    $sogutozu.appendTo("body");
+    $kizilay.appendTo("body");
+    
+    $beytepe.appendTo("body");
+    $kssBulvari.appendTo("body");
+
+    $ankara.click(function() {
+      $mamak.toggle();
+      $cankaya.toggle();
+      $golbasi.toggle();
+      $beytepe.hide();
+      $sogutozu.hide();
+      $kizilay.hide();
+      $kssBulvari.hide();
+    });
+
+    $cankaya.click(function() {
+      $beytepe.toggle();
+      $sogutozu.toggle();
+      $kizilay.toggle();
+      $kssBulvari.hide();
+    });
+
+    $beytepe.click(function() {
+      $kssBulvari.toggle();;
+    });
+
+    $kssBulvari.click(function() {
+      $5704.toggle();;
+    });
+  });
+});
+
+
+	</script>
+</body>
+</html>
