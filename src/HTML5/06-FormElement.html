@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <!-- <form method="get" action="http://www.tipjar.com/cgi-bin/test">      
+        <label for="eposta">E-Posta</label>
+        <br>
+        <input type="email" name="eposta">
+        <br>
+        <label for="teklisecim">Tekli Seçim</label>
+        <br>
+        <select name="teklisecim" id="teklisecim">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <br>
+        <label>Metin</label>
+        <br>
+        <textarea name="metin" rows="6"></textarea>
+        <br>
+        <input type="submit" value="Gönder">
+    </form> -->
+    <!-- Get ile url'den açık olarak veri gönderilir, post ile gönderdiğine ulaşmak için devtools>network>test>Headers'ın en altı -->
+    <form method="post" action="http://www.tipjar.com/cgi-bin/test">      
+        <label for="eposta">E-Posta</label>
+        <br>
+        <input type="email" name="eposta">
+        <br>
+        <label for="teklisecim">Tekli Seçim</label>
+        <br>
+        <select name="teklisecim" id="teklisecim">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+        </select>
+        <br>
+        <label>Metin</label>
+        <br>
+        <textarea name="metin" rows="6"></textarea>
+        <br>
+        <input type="submit" value="Gönder">
+    </form>
+</body>
+</html>
+<!-- Google arama kutusu GET metotu
+Facebook giriş kutuları POST metotu
+
+Hassas bilgiler post gönderilmeli -->
